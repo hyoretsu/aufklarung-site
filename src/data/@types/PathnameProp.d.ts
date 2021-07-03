@@ -1,0 +1,3 @@
+interface PathnameProp {
+ pathname: string;
+}

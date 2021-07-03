@@ -1,0 +1,54 @@
+* {
+ margin: 0;
+ padding: 0;
+ outline: 0;
+ box-sizing: border-box;
+}
+
+body {
+ background-color: #eee8;
+ font-family: 'Segoe UI';
+ -webkit-font-smoothing: antialiased;
+}
+
+#__next {
+ box-shadow: 0 0 10px #0007;
+}
+@media (min-width: 427px) {
+ #__next {
+  margin: 2% 7%;
+ }
+}
+
+p {
+ hyphens: auto;
+ text-align: justify;
+}
+
+a {
+ color: #6ac;
+ text-decoration: none;
+}
+a:hover {
+ color: #f70;
+}
+
+button,
+img {
+ cursor: pointer;
+ background: transparent;
+ border: none;
+}
+
+fieldset {
+ border: none;
+}
+
+label {
+ cursor: text;
+}
+
+ol,
+ul {
+ list-style-position: inside;
+}

@@ -1,78 +1,99 @@
 {
  "env": {
-  "browser": true,
-  "es6": true,
-  "jest": true
+  "es6": true
  },
- "extends": [
-  "airbnb",
-  "plugin:@typescript-eslint/recommended",
-  "plugin:prettier/recommended",
-  "plugin:react/recommended",
-  "prettier/@typescript-eslint"
- ],
+ "extends": ["airbnb", "plugin:prettier/recommended", "prettier"],
  "globals": {
   "Atomics": "readonly",
   "SharedArrayBuffer": "readonly"
  },
- "parser": "@typescript-eslint/parser",
  "parserOptions": {
-  "ecmaFeatures": {
-   "jsx": true
-  },
-  "ecmaVersion": 2018,
   "sourceType": "module"
  },
- "plugins": ["@typescript-eslint", "eslint-plugin-import-helpers", "prettier", "react", "react-hooks"],
+ "plugins": ["prettier"],
  "rules": {
-  "@typescript-eslint/explicit-function-return-type": [
-   "error",
-   {
-    "allowExpressions": true
-   }
-  ],
-  "@typescript-eslint/no-explicit-any": "off",
-  "@typescript-eslint/no-unused-vars": ["error"],
   "jsx-a11y/label-has-associated-control": "off",
-  "import/extensions": [
-   "error",
-   "ignorePackages",
-   {
-    "ts": "never",
-    "tsx": "never"
-   }
-  ],
   "import/no-duplicates": "off",
-  "import/prefer-default-export": "off",
-  "import-helpers/order-imports": [
-   "warn",
+  "no-param-reassign": [
+   "error",
    {
-    "newlinesBetween": "always",
-    "groups": ["module", ["/^components/", "parent"], "/^assets/", "sibling"],
-    "alphabetize": {
-     "order": "asc",
-     "ignoreCase": false
-    }
+    "ignorePropertyModificationsFor": ["accumulator"]
    }
   ],
   "no-unused-expressions": "off",
-  "prettier/prettier": "error",
-  "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
-  "react/jsx-indent": "off",
-  "react/jsx-indent-props": "off",
-  "react/jsx-one-expression-per-line": "off",
-  "react/jsx-props-no-spreading": "off",
-  "react/no-unescaped-entities": "off",
-  "react/prop-types": "off",
-  "react-hooks/exhaustive-deps": "error",
-  "react-hooks/rules-of-hooks": "error"
+  "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+  "no-use-before-define": "off",
+  "prefer-destructuring": "warn",
+  "prettier/prettier": "error"
  },
- "settings": {
-  "import/resolver": {
-   "typescript": {}
-  },
-  "node": {
-   "extensions": [".js", ".jsx", ".ts", ".tsx"]
+ "overrides": [
+  {
+   "files": ["**/*.ts", "**/*.tsx"],
+   "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+   },
+   "extends": ["plugin:@typescript-eslint/recommended", "plugin:react/recommended", "next", "next/core-web-vitals"],
+   "parser": "@typescript-eslint/parser",
+   "parserOptions": {
+    "ecmaFeatures": {
+     "jsx": true
+    },
+    "ecmaVersion": 12
+   },
+   "plugins": ["@typescript-eslint", "import-helpers", "react", "react-hooks"],
+   "rules": {
+    "@next/next/no-img-element": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/explicit-function-return-type": ["error", { "allowExpressions": true }],
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "import/extensions": [
+     "error",
+     "ignorePackages",
+     {
+      "ts": "never",
+      "tsx": "never"
+     }
+    ],
+    "import/prefer-default-export": "off",
+    "import-helpers/order-imports": [
+     "warn",
+     {
+      "newlinesBetween": "always",
+      "groups": [
+       "module",
+       "/^@components/",
+       ["/^@hooks/", "/^@utils/", "/^@api/"],
+       "/^@assets/",
+       "/^@styles/",
+       ["/^@public/", "parent", "sibling"]
+      ],
+      "alphabetize": {
+       "order": "asc"
+      }
+     }
+    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "react/jsx-indent": "off",
+    "react/jsx-indent-props": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/no-unescaped-entities": "off",
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "react-hooks/exhaustive-deps": "error",
+    "react-hooks/rules-of-hooks": "error"
+   },
+   "settings": {
+    "import/resolver": {
+     "typescript": {}
+    }
+   }
   }
+ ],
+ "settings": {
+  "node": { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
  }
 }

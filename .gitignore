@@ -1,16 +1,38 @@
-/node_modules
+/.vscode/
+!/.vscode/launch.json
+/next-sitemap.js
+/next.config.js
+/server.js
+/tmp/
+!/tmp/.gitkeep
 *.log
-.DS_Store
-/build
-/coverage
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+robots.txt
+sitemap.xml
+
+# Dependencies
+/node_modules
 /.pnp
 .pnp.js
-/temp
-tmp/*
-!tmp/.gitkeep
-.vscode/
+
+# Testing
+/coverage/
+
+# Next.js
+/.next/
+/out/
+
+# Production
+/build/
+
+# Misc
+.DS_Store
+*.pem
+
+# Local env files
+/.env.local
+/.env.development.local
+/.env.test.local
+/.env.production.local
+
+# Vercel
+.vercel
