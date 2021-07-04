@@ -1,0 +1,1 @@
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
