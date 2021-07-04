@@ -1,6 +1,5 @@
+import Link from 'next/link';
 import { forwardRef } from 'react';
-
-import Link from '../../../../node_modules/next/link';
 
 interface IProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
  href: string;

@@ -1,4 +1,5 @@
 import Link from '@link';
+import { memo } from 'react';
 import { AiFillCaretDown } from 'react-icons/ai';
 import { FaSearch } from 'react-icons/fa';
 
@@ -52,4 +53,4 @@ const Header: React.FC = () => {
  );
 };
 
-export default Header;
+export default memo(Header);

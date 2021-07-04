@@ -1,4 +1,5 @@
 import Link from '@link';
+import { memo } from 'react';
 
 import Icons from './FooterIcons';
 import { Container } from './styles';
@@ -23,4 +24,4 @@ const Footer: React.FC = () => {
  );
 };
 
-export default Footer;
+export default memo(Footer);

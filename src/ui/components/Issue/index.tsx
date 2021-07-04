@@ -1,5 +1,4 @@
 import Link from '@link';
-import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { FaRegFilePdf } from 'react-icons/fa';
 
