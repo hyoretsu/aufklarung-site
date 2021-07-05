@@ -7,8 +7,8 @@
  "categories": ["personalization"],
  "lang": "en-US",
  "dir": "ltr",
- "background_color": "#f78f22",
- "theme_color": "#f78f22",
+ "background_color": "#ff7700",
+ "theme_color": "#ff7700",
  "shortcuts": [
   {
    "name": "Homepage",
