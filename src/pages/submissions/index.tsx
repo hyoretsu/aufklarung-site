@@ -82,11 +82,8 @@ const Submission: React.FC = () => {
        <FaCheck />
        <span>
         Em caso de submissão a uma seção com avaliação pelos pares, (ex.: Seção <i>Artigos</i>) as instruções
-        disponíveis em{' '}
-        <Link href="https://seer.ufrgs.br/index.php/ambienteconstruido/help/view/editorial/topic/000044">
-         Assegurando a Avaliação pelos Pares Cega
-        </Link>{' '}
-        foram seguidas.
+        disponíveis em <Link href="/submissions/blind_review">Assegurando a Avaliação pelos Pares Cega</Link> foram
+        seguidas.
        </span>
       </li>
       <li>
@@ -174,14 +171,12 @@ const Submission: React.FC = () => {
        <span>Processo de avaliação e parecer</span>
        <p>
         Os manuscritos serão avaliados pelo processo de{' '}
-        <Link href="https://seer.ufrgs.br/index.php/ambienteconstruido/help/view/editorial/topic/000044">
-         avaliação cega dupla pelos pares
-        </Link>{' '}
-        (double blind peer review). Os avaliadores podem ser membros do Conselho da Revista ou membros “ad hoc”
-        escolhidos na Plataforma Lattes/CNPq pelo critério de titulação acadêmica igual ou superior à do autor avaliado,
-        preferencialmente ligado a programa de pós-graduação com pesquisa na área. Revisões sugeridas de forma ou
-        conteúdo devem ser providenciadas pelos autores no prazo estabelecido pela revista. O prazo desejado para
-        avaliação dos textos é de até 30 dias. Textos reprovados não podem ser submetidos novamente para avaliação.
+        <Link href="/submissions/blind_review">avaliação cega dupla pelos pares</Link> (double blind peer review). Os
+        avaliadores podem ser membros do Conselho da Revista ou membros “ad hoc” escolhidos na Plataforma Lattes/CNPq
+        pelo critério de titulação acadêmica igual ou superior à do autor avaliado, preferencialmente ligado a programa
+        de pós-graduação com pesquisa na área. Revisões sugeridas de forma ou conteúdo devem ser providenciadas pelos
+        autores no prazo estabelecido pela revista. O prazo desejado para avaliação dos textos é de até 30 dias. Textos
+        reprovados não podem ser submetidos novamente para avaliação.
        </p>
       </li>
       <li>
