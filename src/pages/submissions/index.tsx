@@ -23,7 +23,7 @@ const Submission: React.FC = () => {
      </p>
     </div>
     <Conditions>
-     <h3>Condições para submissão</h3>
+     <h2>Condições para submissão</h2>
      <p>
       Como parte do processo de submissão, os autores são obrigados a verificar a conformidade da submissão em relação a
       todos os itens listados a seguir. As submissões que não estiverem de acordo com as normas serão devolvidas aos
@@ -113,7 +113,7 @@ const Submission: React.FC = () => {
      </ol>
     </Conditions>
     <Guidelines id="diretrizes">
-     <h3>Diretrizes para Autores</h3>
+     <h2>Diretrizes para Autores</h2>
      <ol>
       <li>
        <span>Formatação</span>
@@ -297,7 +297,7 @@ const Submission: React.FC = () => {
      </ol>
     </Guidelines>
     <Section>
-     <h3>Seções aplicáveis para submissões</h3>
+     <h2>Seções aplicáveis para submissões</h2>
      <ul>
       <li>
        <h3>Editorial</h3>
@@ -357,18 +357,10 @@ const Submission: React.FC = () => {
         palavras-chaves) e suas traduções para o inglês (título, resumo e palavras-chave).
        </p>
       </li>
-      <li>
-       <h3>Notícias acadêmicas</h3>
-       <p />
-      </li>
-      <li>
-       <h3>Ensaios</h3>
-       <p />
-      </li>
      </ul>
     </Section>
     <Section>
-     <h3>Declaração de Direito Autoral</h3>
+     <h2>Declaração de Direito Autoral</h2>
      <strong>Política de Direito Autoral para os itens publicados pela Revista:</strong>
      <ol>
       <li>
@@ -408,7 +400,7 @@ const Submission: React.FC = () => {
      </p>
     </Section>
     <Section>
-     <h3>Política de Privacidade</h3>
+     <h2>Política de Privacidade</h2>
      <p>
       Todos os dados, além de nomes e endereços informados nesta revista serão usados exclusivamente para os serviços
       por ela prestados, ficando indisponíveis para qualquer fim por terceiros.

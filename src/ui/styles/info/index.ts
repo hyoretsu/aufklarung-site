@@ -3,6 +3,7 @@ import { styled } from '@linaria/react';
 export const Styling = styled.div`
  > h2 {
   font-variant: small-caps;
+  font-stretch: 110%;
   color: #f70;
   margin: 2vh 2vw 0;
 
@@ -29,6 +30,7 @@ export const Section = styled.section`
 
  h3 {
   font-variant: small-caps;
+  font-stretch: 110%;
   color: #f70;
   margin-bottom: 1vh;
  }

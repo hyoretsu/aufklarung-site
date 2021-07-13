@@ -15,12 +15,4 @@ export const Body = styled.main`
  min-width: 70%;
  border: 1px solid #479;
  border-radius: 0 35px;
-
- > img {
-  position: absolute;
-  bottom: -302%;
-  color: #fff;
-  height: 300px;
-  z-index: -1;
- }
 `;

@@ -5,16 +5,16 @@ const Container = styled.div`
  flex-direction: column;
  align-items: center;
  justify-content: center;
- height: 100vh;
+ height: 80vh;
 
  svg {
   color: #f00;
   width: auto;
-  height: 18%;
+  height: 20%;
  }
 
  span {
-  font-size: 1.8em;
+  font-size: 2em;
  }
 `;
 

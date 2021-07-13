@@ -10,6 +10,8 @@ export const Styling = styled.div`
  h1 {
   color: #f70;
   font-variant: small-caps;
+  font-weight: 500;
+  font-stretch: 110%;
   font-size: 1.4em;
  }
 

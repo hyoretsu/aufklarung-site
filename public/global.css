@@ -7,7 +7,7 @@
 
 body {
  background-color: #eee8;
- font-family: 'Segoe UI';
+ font-family: 'Archivo';
  -webkit-font-smoothing: antialiased;
 }
 
@@ -22,7 +22,10 @@ body {
 
 p {
  hyphens: auto;
- text-align: justify;
+}
+p,
+ol {
+ line-height: 1.3em;
 }
 
 a {

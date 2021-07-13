@@ -7,6 +7,7 @@ export const Styling = styled.div`
  section {
   h4 {
    font-variant: small-caps;
+   font-stretch: 110%;
    color: #f70;
   }
 

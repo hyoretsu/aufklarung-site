@@ -18,6 +18,7 @@ export const Section = styled.section`
    @media (max-width: 426px) {
     max-height: 100%;
     max-width: 100%;
+    margin: 1vh 0 2vh;
    }
   }
  }
@@ -31,7 +32,6 @@ export const Section = styled.section`
   }
 
   p {
-   font-size: 0.9em;
    margin-top: 2vh;
   }
  }

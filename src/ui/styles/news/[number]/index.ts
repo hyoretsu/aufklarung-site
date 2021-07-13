@@ -1,7 +1,7 @@
 import { styled } from '@linaria/react';
 
 export const Styling = styled.div<PathnameProp>`
- margin: 2vh 2vw;
+ margin: 3vh 2vw 2vh;
 
  @media (max-width: 426px) {
   margin: 2vh 4vw 3vw;
@@ -9,6 +9,8 @@ export const Styling = styled.div<PathnameProp>`
 
  > h2 {
   font-variant: small-caps;
+  font-weight: 600;
+  font-stretch: 110%;
   color: #f70;
  }
 
@@ -17,7 +19,7 @@ export const Styling = styled.div<PathnameProp>`
   align-items: center;
   color: #0007;
 
-  margin: 10px 0;
+  margin: 2vh 0;
 
   svg {
    height: 18px;

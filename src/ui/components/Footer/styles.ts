@@ -13,21 +13,21 @@ export const Container = styled.footer`
 
  p,
  strong {
-  text-align: center;
   margin: 1vh 0;
  }
 
- > div {
+ div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 83%;
- }
 
- a {
-  img {
-   height: min(7vh, 50px);
-   margin: 0 0.2vw;
+  a {
+   img {
+    height: 7vh;
+    min-height: 50px;
+    margin: 0 0.2vw;
+   }
   }
  }
 `;

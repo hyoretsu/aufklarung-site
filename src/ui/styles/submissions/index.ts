@@ -13,14 +13,27 @@ export const Styling = styled.div`
   border-left: 5px solid #479;
  }
 
+ h2,
  h3 {
   font-variant: small-caps;
+  font-stretch: 110%;
   color: #f70;
+ }
+ h2 {
+  margin: 2vh 0;
+ }
+ h3 {
+  margin: 1vh 0;
+ }
+
+ p,
+ span {
+  line-height: 1.5em;
  }
 `;
 
 export const Conditions = styled.section`
- margin-top: 6vh;
+ margin-top: 4vh;
 
  ol {
   margin: 2vh 0;
@@ -60,17 +73,13 @@ export const Guidelines = styled.section`
 
   > li {
    counter-increment: item;
+   margin-bottom: 2vh;
 
    &:before {
     content: counters(item, '.') '. ';
-    font-weight: 700;
-    color: #f70;
    }
-  }
- }
 
- > ol {
-  > li {
+   &:before,
    > span {
     font-weight: 700;
     color: #f70;
@@ -82,13 +91,19 @@ export const Guidelines = styled.section`
 export const SubList = styled.ol`
  list-style-type: none;
  counter-reset: item;
+ line-height: 1.5em;
 
  > li {
   counter-increment: item;
 
   ul {
-   list-style-type: none;
-   margin: 0 0 1vh 1vw;
+   list-style: none;
+   margin-bottom: 1vh;
+   margin-left: 1vw;
+
+   li {
+    margin-bottom: 1vh;
+   }
   }
 
   &:before {
@@ -98,11 +113,6 @@ export const SubList = styled.ol`
 `;
 
 export const Section = styled.section`
- p,
- span {
-  line-height: 25px;
- }
-
  ul {
   list-style: none;
  }

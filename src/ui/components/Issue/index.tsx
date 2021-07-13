@@ -17,7 +17,7 @@ const Issue: React.FC = () => {
     <span>Dossiê Sartre</span>
     <span>
      <strong>Publicado: </strong>
-     <span>2020-02-19</span>
+     2020-02-19
     </span>
    </Introduction>
    <strong>Editorial</strong>

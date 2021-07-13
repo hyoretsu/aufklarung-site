@@ -20,7 +20,7 @@ const Header: React.FC = () => {
     <Link href="/issues">Arquivos</Link>
     <Link href="/news">Notícias</Link>
     <Dropdown>
-     Sobre
+     <span>Sobre</span>
      <AiFillCaretDown />
      <ul>
       <li>

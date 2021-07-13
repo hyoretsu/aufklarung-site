@@ -15,22 +15,13 @@ export const Styling = styled.div`
 
   h4 {
    font-variant: small-caps;
+   font-stretch: 110%;
    color: #f70;
   }
 
-  div {
-   @media (min-width: 427px) {
-    line-height: 1.7;
-   }
-
-   @media (max-width: 426px) {
-    & + div {
-     margin-top: 2vh;
-    }
-   }
-
+  @media (min-width: 427px) {
    p {
-    display: inline;
+    line-height: 1.7;
    }
   }
  }

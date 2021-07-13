@@ -21,7 +21,6 @@ export const Styling = styled.div`
 
 export const Contacts = styled.div`
  display: flex;
- margin-top: 1vh;
 
  @media (max-width: 426px) {
   flex-direction: column;
@@ -41,8 +40,15 @@ export const Section = styled.section`
   }
  }
 
+ strong {
+  display: block;
+  margin-bottom: 1vh;
+ }
+
  h4 {
   font-variant: small-caps;
+  font-stretch: 110%;
+  margin: 1vh 0;
   color: #f70;
  }
 
